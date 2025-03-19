@@ -69,7 +69,7 @@ int sumaLista(List *L) {
 
    void* elemento = first(L);
 
-   for (size_t i = 0; i <= contador; i++)
+   while (elemento != NULL)
    {
       int valor = *((int*)elemento);
       suma += valor;

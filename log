@@ -19,3 +19,14 @@ Wed, Mar 19, 2025  9:22:51 AM:
  1 file changed, 18 insertions(+), 1 deletion(-)
  tests:  0|0
 4f24088
+Wed, Mar 19, 2025  9:24:26 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:68:8: error: unused variable 'contador' [-Werror=unused-variable]
+    int contador = get_size(L);
+        ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6243b7f
