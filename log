@@ -30,3 +30,8 @@ exercises.c:68:8: error: unused variable 'contador' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 6243b7f
+Wed, Mar 19, 2025  9:25:29 AM: 
+ exercises.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  0|0
+2a0ac59

@@ -65,8 +65,6 @@ int sumaLista(List *L) {
 
    int suma = 0;
 
-   int contador = get_size(L);
-
    void* elemento = first(L);
 
    while (elemento != NULL)
