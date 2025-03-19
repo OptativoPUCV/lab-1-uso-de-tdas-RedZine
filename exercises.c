@@ -48,10 +48,9 @@ List* crea_lista() {
    {
       int* CopiaK = (int*) malloc(sizeof(int));
       *CopiaK = k;
-      pushFront(L,CopiaK);
+      pushBack(L,CopiaK);
 
       }
-
 
    return L;
 }
