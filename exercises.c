@@ -90,11 +90,11 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-    void* aux = first(L);
+    int* aux = first(L);
 
    while (aux != NULL)
    {
-      if ((*(int*)aux) == elem)
+      if (*aux == elem)
       {
          popCurrent(L);
          
