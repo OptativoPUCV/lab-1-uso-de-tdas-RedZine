@@ -86,3 +86,13 @@ exercises.c:124:23: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4054ba6
+sá., 22 de mar. de 2025 16:26:42: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+test.c: In function 'test_parentesis_balanceados':
+test.c:217:9: error: implicit declaration of function 'parentesisBalanceados' [-Werror=implicit-function-declaration]
+     if(!parentesisBalanceados(s)){
+         ^~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c37efcc
