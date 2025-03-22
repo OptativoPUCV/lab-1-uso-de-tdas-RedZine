@@ -145,7 +145,11 @@ int parentesisBalanceados(char *cadena) {
    for (size_t k = 0 ; cadena[k] != '\0'; k++)
    {
       char c = cadena[k];
-      if (c =='(' || c == '{' || c == '[') push(Pila, &c);
+      if (c =='(' || c == '{' || c == '['){
+         char *Copia = malloc(sizeof(char));
+         *Copia = c;
+         push(Pila,Copia);
+      }
       else if(c ==')' || c == '}' || c == ']'){
          if (top(Pila) == NULL) return 0;
 
@@ -154,6 +158,7 @@ int parentesisBalanceados(char *cadena) {
          if ((c == ')' && *Abre != '(') || (c == '}' && *Abre != '{') || (c == ']' && *Abre != '[')) return 0;
 
          pop(Pila);
+         free(Abre);
       }
    }
 

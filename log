@@ -183,3 +183,9 @@ sá., 22 de mar. de 2025 19:03:16:
  tests:  4|1
 total_score: 50/70
 fefdcc2
+sá., 22 de mar. de 2025 19:07:42: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+ tests:  9|0
+total_score: 70/70
+d990ea1
