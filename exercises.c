@@ -150,10 +150,12 @@ int parentesisBalanceados(char *cadena) {
       if (c == '(' || c == '{' || c == '[') Abre++;
       else if (c == ')' || c == '}' || c == ']') Cierra++;
    }
-   if (Abre < Cierra) return 0;
+   if (Cierra > Abre) return 0;
    else
    {
-      return 1;
+      if (Abre == Cierra) return 1;
    }
+
+   return 0;
 }
      
