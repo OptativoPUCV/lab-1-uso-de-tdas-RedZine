@@ -96,3 +96,9 @@ test.c:217:9: error: implicit declaration of function 'parentesisBalanceados' [-
 cc1.exe: all warnings being treated as errors
 Compilation failed
 c37efcc
+sá., 22 de mar. de 2025 16:27:31: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+1a77d5a

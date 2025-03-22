@@ -138,6 +138,6 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
 
-int parentesisBalanceadosds(char *cadena) {
+int parentesisBalanceados(char *cadena) {
    return 0;
 }
