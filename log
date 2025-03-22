@@ -127,3 +127,17 @@ exercises.c:168:13: note: previous definition of 'apertura' was here
              ^~~~~~~~
 Compilation failed
 069b069
+sá., 22 de mar. de 2025 18:26:43: 
+ exercises.c | 29 ++++++-----------------------
+ 1 file changed, 6 insertions(+), 23 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:158:22: error: suggest parentheses around '&&' within '||' [-Werror=parentheses]
+       if ((c == ')') && *apertura != '(' ||
+           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+exercises.c:160:21: error: suggest parentheses around '&&' within '||' [-Werror=parentheses]
+          (c == ')') && *apertura != '[')
+          ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e2abe71

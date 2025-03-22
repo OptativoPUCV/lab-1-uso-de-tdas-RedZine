@@ -146,21 +146,8 @@ int parentesisBalanceados(char *cadena) {
    {
       char c = cadena[k]; //La variable c se refiere a ese caracter pero mas corto por que se va a utilizar bastante
 
-      if (c == '(' || c == '[' || c == '{')
-      {
-         char *caracter = &c;
-         push(Pila, caracter); 
-      }
-      if (c == ')')
-      {
-         if (top(Pila) == NULL) return 0;
-      }
-
-      char *apertura = (char*)top(Pila);
-      pop(Pila);
-
-      if (*apertura != '{') return 0;
-      else if (c == ']')
+      if (c == '(' || c == '[' || c == '{') push(Pila,&c);
+      else if (c == ')' || c == ']' || c == '}')
       {
          if (top(Pila) == NULL) return 0;
       }
@@ -168,17 +155,13 @@ int parentesisBalanceados(char *cadena) {
       char *apertura = (char *)top(Pila);
       pop(Pila);
 
-      if (*apertura != '{') return 0;
-      else if(c == ']')
-      {
-         if (top(Pila) == NULL) return 0;
-      }
-
-      char *apertura = (char*)top(Pila);
-      pop(Pila);
-
-      if (*apertura != '[') return 0;
+      if ((c == ')') && *apertura != '(' ||
+         (c == ')') && *apertura != '{' ||
+         (c == ')') && *apertura != '[')
+         {
+            return 0;
+         }
    }
-
+   
    return (top(Pila) == NULL);
 }
