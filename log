@@ -43,3 +43,8 @@ sá., 22 de mar. de 2025 15:07:53:
  tests:  2|3
 total_score: 20/70
 1a8f0df
+sá., 22 de mar. de 2025 15:12:50: 
+ exercises.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ tests:  0|0
+9e7304c
